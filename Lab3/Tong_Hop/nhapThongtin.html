@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhận thông tin</title>
+
+</head>
+<body>  
+
+
+<form action="xulyThongtin.php" method="post">
+<fieldset> 
+  <legend><h2>Enter your inormation</h2></legend>
+
+  <table>
+    <tr>
+      <td>Họ tên:</td>
+      <td><input type="text" name="name"></td>
+    </tr>
+
+    <tr>
+      <td>Địa chỉ:</td>
+      <td><input type="text" name="diaChi"></td>
+    </tr>
+
+    <tr>
+      <td>Số điện thoại:</td>
+      <td><input type="text" name="sdt"></td>
+    </tr>
+
+    <tr>
+      <td>Giới tính</td>
+      <td>  <input type="radio" name="gioitinh" value="Nam">Nam 
+            <input type="radio" name="gioitinh" value="Nữ">Nữ </td>
+    </tr>
+
+    <tr>
+      <td><label for="quoctich">Quốc tịch:</label></td>
+      <td><select id="quoctich" name="quoctich">
+            <option value="Việt Nam">Việt Nam</option>
+            <option value="Lào">Lào</option>
+            <option value="Mỹ" selected>Mỹ</option>
+            <option value="Hàn Quốc">Hàn Quốc</option>
+          </select></td>
+    </tr>
+
+    <tr>
+      <td>Các môn đã học:</td>
+      <td>  <input type="checkbox"  name="monhoc" value="SQL">
+            <label for="cacMH"> My SQL </label>
+            <input type="checkbox"  name="monhoc" value="C#">
+            <label for="cacMH"> C#</label>
+            <input type="checkbox" name="monhoc" value="XML">
+            <label for="cacMH"> XML</label>
+            <input type="checkbox" name="monhoc" value="Python">
+            <label for="cacMH"> Python</label></td>
+    </tr>
+
+    <tr>
+      <td>Ghi chú:</td>
+      <td><textarea name="ghichu" rows="5" cols="40"></textarea></td>
+    </tr>
+
+    <tr >
+      <td colspan="2" align="center">
+      <input type="submit" name="submit" value="Gửi">  
+      <!-- <input type="submit" formaction="/xulyThongtin.php" value="Hủy"> -->
+      <input type="reset" value="Hủy">
+      </td>
+    <tr>
+</form>
+</table>
+</fieldset>
+
+</body>
+</html>
